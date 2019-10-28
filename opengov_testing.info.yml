@@ -1,0 +1,6 @@
+name: Opengov Testing
+description: Contains Functional Nightwatch Tests for Testing Open Government Website.
+package: Custom
+
+type: module
+core: 8.x

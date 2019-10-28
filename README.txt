@@ -29,6 +29,6 @@ RUNNING TESTS
 2. sudo nightwatch /path/.../opengov_testing/tests/[TESTNAME].js
 
 To test if nightwatch is working, run
-    sudo nightwatch tests/basic.homepageTest.js
+    sudo nightwatch tests/basic/homepageTest.js
 This just tests if the text "Open Government" is present on homepage
 

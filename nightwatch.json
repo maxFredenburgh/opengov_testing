@@ -2,6 +2,8 @@
   "src_folders" : ["tests"],
   "output_folder" : "reports",
   "custom_commands_path":"./commands",
+  "skip_testcases_on_fail": true,
+  "end_session_on_fail": true,
 
   "selenium" : {
     "start_process" : true,

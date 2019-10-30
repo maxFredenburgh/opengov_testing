@@ -10,9 +10,10 @@
  * @return {object}
  *   The 'browser' object.
  */
+
 exports.command = function drupalRelativeURL(pathname, callback) {
   const self = this;
-  this.url(`${process.env.DRUPAL_TEST_BASE_URL}${pathname}`);
+  this.url(`http://localhost/en${pathname}`);
 
   if (typeof callback === 'function') {
     callback.call(self);

@@ -6,6 +6,7 @@ STEPS FOR SETTING UP NIGHTWATCH
     		sudo npm install -g n
     		sudo n stable
     		sudo n latest
+    		yes |sudo  cp -rf /usr/local/bin/node /bin/node
 
 2. Download latest version of selenium-standalone-server.jar and chromedriver to opengov_testing/bin
     2a. cd /path/.../modules/custom/opengov_testing/bin
@@ -32,3 +33,14 @@ To test if nightwatch is working, run
     sudo nightwatch tests/basic/homepageTest.js
 This just tests if the text "Open Government" is present on homepage
 
+FULL STEPS IN ORDER:
+sudo yum install nodejs
+npm update
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+sudo n latest
+yes |sudo  cp -rf /usr/local/bin/node /bin/node
+npm install -g nightwatch
+cd /opt/tbs/wcms/open_government/opengov_testing
+sudo nightwatch tests/Functional/BasicPage/masterBasicPageTest.js
